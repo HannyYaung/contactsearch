@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hanny.contactsearch.MainActivity">
+
+    <EditText
+        android:id="@+id/mEtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#c0c0bf"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mEtSearch"></android.support.v7.widget.RecyclerView>
+
+    <com.hanny.contactsearch.view.QuickIndexBar
+        android:id="@+id/qiBar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mEtSearch" />
+</RelativeLayout>
